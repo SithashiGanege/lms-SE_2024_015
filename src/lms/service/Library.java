@@ -11,18 +11,10 @@ public class Library {
     private final List<Member> members = new ArrayList<>();
 
     public void addItem(LibraryItem item) {
-        if (item == null) {
-            throw new IllegalArgumentException(
-                    "Item cannot be null");
-        }
         items.add(item);
     }
 
     public void addMember(Member member) {
-        if (member == null) {
-            throw new IllegalArgumentException(
-                    "Member cannot be null");
-        }
         members.add(member);
     }
 
@@ -43,7 +35,7 @@ public class Library {
     public void printAllLateFees(int daysLate) {
         System.out.println(
                 "--- Late fees if " + daysLate
-                        + " day(s) late ---");
+                        + " day(s) late  ---");
 
         for (LibraryItem item : items) {
             System.out.println(

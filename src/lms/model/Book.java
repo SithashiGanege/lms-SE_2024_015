@@ -20,15 +20,4 @@ public class Book extends LibraryItem {
         }
         this.author = author;
     }
-
-    @Override
-    public double calculateLateFee(int daysLate) {
-        return daysLate * 5.0;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString()
-                + ", author='" + author + "'";
-    }
 }

@@ -9,7 +9,7 @@ public abstract class LibraryItem {
     public LibraryItem(String id, String title) {
         setId(id);
         setTitle(title);
-        isBorrowed = false;
+        this.isBorrowed = false;
     }
 
     public String getId() {
@@ -39,11 +39,11 @@ public abstract class LibraryItem {
     }
 
     public void borrowItem() {
-        isBorrowed = true;
+        this.isBorrowed = true;
     }
 
     public void returnItem() {
-        isBorrowed = false;
+        this.isBorrowed = false;
     }
 
     public double calculateLateFee(int daysLate) {
