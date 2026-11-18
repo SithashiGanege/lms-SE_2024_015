@@ -53,8 +53,8 @@ public abstract class LibraryItem {
     @Override
     public String toString() {
         return getClass().getSimpleName()
-                + "{id='" + id
-                + "', title='" + title
-                + "', borrowed=" + isBorrowed + "}";
+                + "\n" + "id= " + id
+                + "\n" + "title= " + title
+                + "\n" + "borrowed= " + isBorrowed + "\n" ;
     }
 }
