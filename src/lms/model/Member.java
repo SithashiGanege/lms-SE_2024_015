@@ -67,9 +67,9 @@ public class Member {
     @Override
     public String toString() {
         return getClass().getSimpleName()
-                + "{id='" + memberId
-                + "', name='" + name
-                + "', borrowedCount=" + borrowedCount
-                + ", limit=" + maxBorrowLimit + "}";
+                + "\nid= " + memberId
+                + "\nname= " + name
+                + "\nborrowedCount= " + borrowedCount
+                + "\nlimit= " + maxBorrowLimit +"\n";
     }
 }
